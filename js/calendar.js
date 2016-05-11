@@ -28,7 +28,7 @@ angular.module("materialExample").controller("calendarCtrl", function($scope, $f
     $scope.tooltips = false;
     $scope.setDayContent = function(date) {
         var key = [(date.getDate()), (date.getMonth()+1), date.getFullYear()].join("-");
-        var baseUrl = "/data/" + date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + (date.getDate());
+        var baseUrl = "data/" + date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + (date.getDate());
         var url = baseUrl + "/events.json";
 
         if ($scope.downloadedEvents[key] == []) return "<p></p>";
@@ -51,7 +51,7 @@ angular.module("materialExample").controller("calendarCtrl", function($scope, $f
                 if (!ev.img) {
                    $scope.downloadedEvents[key][idx].img = baseUrl + "/event" + idx + ".png";
                 } else {
-                   $scope.downloadedEvents[key][idx].img = baseUrl + "/" + ev.img;                   
+                   $scope.downloadedEvents[key][idx].img = baseUrl + "/" + ev.img;
                 }
                 $scope.downloadedEvents[key][idx].link = "event" + idx;
                 if (ev.archivos) {
