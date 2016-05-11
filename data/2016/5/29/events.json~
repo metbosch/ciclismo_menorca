@@ -1,0 +1,10 @@
+[{
+    "nom": "Cursa BTT PCC",
+    "organizador": "Penya Ciclista Ciutadella",
+    "info": "Proximamente...",
+    "archivos": [
+	{"nom": "Cadetes", "link": "ev0_cad.jpeg"},
+	{"nom": "Junior Femina", "link": "ev0_jun.jpeg"},
+	{"nom": "Open", "link": "ev0_open.jpeg"}
+    ]
+}]
